@@ -4,7 +4,7 @@ import (
 	"embed"
 	"fmt"
 	"os"
-	"path/filepath"
+	"strings"
 
 	"github.com/fatih/color"
 	"github.com/spf13/cobra"
@@ -46,7 +46,7 @@ func AddCommands(fs embed.FS) {
 
 	for _, entry := range entries {
 		cmdName := removerExt(entry.Name())
-		b, err := fs.ReadFile(filepath.Join("fortune", entry.Name()))
+		b, err := fs.ReadFile("fortune/" + entry.Name())
 		if err != nil {
 			exitError(err)
 		}
@@ -63,7 +63,10 @@ func AddCommands(fs embed.FS) {
 }
 
 func removerExt(path string) string {
-	return filepath.Base(path[:len(path)-len(filepath.Ext(path))])
+	if idx := strings.LastIndexByte(path, '.'); idx >= 0 {
+		return path[:idx]
+	}
+	return path
 }
 
 func randomPrint() int {
