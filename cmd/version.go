@@ -12,7 +12,7 @@ var (
 )
 
 func getVersion() string {
-	return fmt.Sprintf("subaru version " + Version + " (under Apache License verison 2.0)")
+	return fmt.Sprintf("subaru version " + Version + " (under Apache License version 2.0)")
 }
 
 var versionCmd = &cobra.Command{
