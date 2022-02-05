@@ -1,12 +1,12 @@
 [![Build](https://github.com/nao1215/subaru/actions/workflows/build.yml/badge.svg)](https://github.com/nao1215/subaru/actions/workflows/build.yml)
 [![UnitTest](https://github.com/nao1215/subaru/actions/workflows/unit_test.yml/badge.svg)](https://github.com/nao1215/subaru/actions/workflows/unit_test.yml)
 # subaru - inspired by fortune command
-subaru command print philosophy or wise sayings. If no subcommand is specified, the random philosophy will be output. The subcommand name is a person's name, programming language, or company name. If you execute subaru command with a subcommand, the phrase related to that name is output.
+subaru command print philosophy or wise sayings. If you are not specified subcommand, subaru print the random phrase. The subcommand name is a person's name, programming language, or company name, etc. If you execute subaru command with a subcommand, subaru print the phrase related to that name.
 
 # How to install
 ## Step.1 Install golang
 If you don't install golang in your system, please install Golang first. Check the [Go official website](https://go.dev/doc/install) for how to install golang.
-## Step2. Install ubume
+## Step2. Install subaru
 ```
 $ go install github.com/nao1215/subaru@latest
 ```
