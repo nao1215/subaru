@@ -1,3 +1,5 @@
+[![Build](https://github.com/nao1215/subaru/actions/workflows/build.yml/badge.svg)](https://github.com/nao1215/subaru/actions/workflows/build.yml)
+[![UnitTest](https://github.com/nao1215/subaru/actions/workflows/unit_test.yml/badge.svg)](https://github.com/nao1215/subaru/actions/workflows/unit_test.yml)
 # subaru - inspired by fortune command
 subaru command print philosophy or wise sayings. If no subcommand is specified, the random philosophy will be output. The subcommand name is a person's name, programming language, or company name. If you execute subaru command with a subcommand, the phrase related to that name is output.
 
