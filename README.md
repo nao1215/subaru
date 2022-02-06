@@ -28,13 +28,14 @@ You keep score with money.
 If you want to know the list of subcommands, execute "subaru --help".
 
 # Contribution
-**Welcome to add philosophy or wise sayings.**  You can add subcommands in the following ways:
+**Welcome to add philosophy or wise sayings.**    
+If you add the phrase to subaru, just add the text file(*.subaru) in the fortune directory. That's all. You can add phrase (subcommands) in the following ways:
 
-1. Add "XXX.subaru"(XXX is any sub command name) under the fortune directory.
+1. Add "XXX.subaru" under the fortune directory. XXX is the name of the person (or tool, company, etc.) related to phrase. XXX is extracted and used as the subcommand name at runtime.
 2. Write any text in the created XXX.subaru.
 
-
-The subaru command includes the \*.subaru files in the fortune directory at build time. When the subaru command is executed, the embedded fortune/\*.subaru file is read and the subcommand is created.
+The subaru command embedd the .subaru files in the fortune directory at build time. When the subaru command is executed, the embedded fortune/.subaru file is read and the subcommand is created.  
+If you contribute, I will record your name in AUTHORS.md.
 
 # Contact
 If you would like to send comments such as "find a bug" or "request for additional features" to the developer, please use one of the following contacts.
