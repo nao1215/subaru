@@ -6,7 +6,6 @@ import (
 	"os"
 	"strings"
 
-	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
@@ -77,7 +76,8 @@ func randomPrint() int {
 }
 
 func printPhrase(cmdName, phrase string) int {
-	fmt.Println("[" + color.GreenString(cmdName) + "]")
+	cmdName = strings.Replace(strings.ToUpper(cmdName), "_", " ", -1)
+	fmt.Println("[" + cmdName + "]")
 	fmt.Println(phrase)
 	return 0
 }
