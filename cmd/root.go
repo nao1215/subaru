@@ -51,9 +51,10 @@ func AddCommands(fs embed.FS) {
 			exitError(err)
 		}
 
+		n := strings.Replace(strings.ToUpper(cmdName), "_", " ", -1)
 		rootCmd.AddCommand(&cobra.Command{
 			Use:   cmdName,
-			Short: "Print phrase related to " + cmdName,
+			Short: "Print phrase related to " + n,
 			Run: func(cmd *cobra.Command, args []string) {
 				os.Exit(printPhrase(cmd.Name(), string(b)))
 			},
