@@ -8,7 +8,7 @@ import (
 
 var (
 	// Version is subaru command version.
-	Version = "0.1.5"
+	Version = "1.0.0"
 )
 
 func getVersion() string {
