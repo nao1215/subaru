@@ -14,7 +14,7 @@ $ go install github.com/nao1215/subaru@latest
 ```
   
 # How to use
-## Ranodom output
+## Random output
 ```
 $ subaru
 [nietzsche]
