@@ -16,9 +16,45 @@ $ go install github.com/nao1215/subaru@latest
 # How to use
 ## Random output
 ```
-$ subaru
-[nietzsche]
-Love is more afraid of change than destruction.
+$ subaru 
+[BENJAMIN FRANKLIN]
+Drive thy business; let it not drive thee.
+
+$ subaru 
+[MRS GUMP]
+Life was like a box of chocolates. You never know what you’re gonna get.
+
+$ subaru 
+[CHRISTOPHER CHAMBERS]
+Kids lose everything, unless there’s someone there to look out for them. And id your parents are too fucked-up to do it, then maybe I should. 
+
+$ subaru 
+[GOETHE]
+Chess is the touchstone of intellect.
+
+$ subaru 
+[SOCRATES]
+Thou shouldst eat to live; not live to eat.
+
+$ subaru 
+[EDOGAWA KONAN]
+One truth prevails.
+
+$ subaru 
+[FYODOR DOSTOEVSKY]
+...whether I am a trembling creature or whether I have the right...
+
+$ subaru 
+[MARK TWAIN]
+To succeed in life, you need two things; ignorance and confidence.
+
+$ subaru 
+[CHARLES DARWIN]
+A man who dares to waste one hour of time has not discovered the value of life.
+
+$ subaru 
+[HELEN KELLER]
+Keep your face to the sunshine and you cannot see the shadow.
 ```
 ## Specifying the subcommand
 ```
